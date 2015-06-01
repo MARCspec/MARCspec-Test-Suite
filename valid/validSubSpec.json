@@ -1,0 +1,118 @@
+{
+    "description": "subspecs are strings",
+    "schema": {
+      "type": "string"
+    },
+    "tests": [
+        {
+            "description": "all wildcards",
+            "data": "{245$a}",
+            "valid": true
+        },
+        {
+            "description": "two wildcards left with digit",
+            "data": "{$a}",
+            "valid": true
+        },
+        {
+            "description": "one wildcard left with two digits",
+            "data": "{?$a}",
+            "valid": true
+        },
+        {
+            "description": "wildcard between digits",
+            "data": "{!$a}",
+            "valid": true
+        },
+        {
+            "description": "two digits wildcard right",
+            "data": "{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "one digit two wildcards right",
+            "data": "{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "all digits",
+            "data": "{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "all uppercase chars special leader",
+            "data": "{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "all uppercase chars",
+            "data": "{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "two wildcards left one uppercase char",
+            "data": "{/#=\\/}",
+            "valid": true
+        },
+        {
+            "description": "one wildcard left two uppercase chars",
+            "data": "{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "one wildcard between uppercase chars",
+            "data": "{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "one uppercase char two wildcards right",
+            "data": "{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "mix one lowercase char and two digits",
+            "data": "{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "mix two lowercase chars and one digit",
+            "data": "{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "all lowercase chars",
+            "data": "{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "two wildcards and one lowercase char right",
+            "data": "{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "one wildcard left and two lowercase chars",
+            "data": "{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "one lowercase and two wildcards right",
+            "data": "{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "all lowercase chars",
+            "data": "{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "all lowercase chars",
+            "data": "{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "all lowercase chars",
+            "data": "{$a~\\test\\|}",
+            "valid": true
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "description": "comparison strings are strings and match pattern",
+    "schema": {
+        "type": "string",
+        "pattern": "^((?:[^${}!=~?|\\s]|(?<=\\\\)[${}!=~?|])+)$"
+    },
+    "tests": [
+        {
+            "description": "subfield with single lowercase alpha subfieldtag",
+            "data": "test\\$",
+            "valid": true
+        },
+        {
+            "description": "subfield with single lowercase alpha subfieldtag",
+            "data": "test\\{",
+            "valid": true
+        },
+        {
+            "description": "subfield with single digit subfieldtag",
+            "data": "te\\}st",
+            "valid": true
+        },
+        {
+            "description": "subfieldrange with lowercase subfieldtags",
+            "data": "test\\!",
+            "valid": true
+        },
+        {
+            "description": "subfieldrange with lowercase subfieldtags",
+            "data": "\\=test",
+            "valid": true
+        },
+        {
+            "description": "subfieldrange with lowercase subfieldtags",
+            "data": "test\\~",
+            "valid": true
+        },
+        {
+            "description": "subfieldrange with lowercase subfieldtags",
+            "data": "test\\?",
+            "valid": true
+        },
+        {
+            "description": "subfieldrange with lowercase subfieldtags",
+            "data": "tes\\st\\|",
+            "valid": true
+        }
+    ]
+}

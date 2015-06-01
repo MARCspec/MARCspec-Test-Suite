@@ -1,0 +1,64 @@
+{
+    "description": "field tags are strings and match pattern",
+    "schema": {
+      "type": "string",
+      "pattern": "^([.a-z0-9]{3,3}|[.A-Z0-9]{3,3})$"
+    },
+    "tests": [
+        {
+            "description": "an integer is not a string",
+            "data": 245,
+            "valid": false
+        },
+        {
+            "description": "too many wildcards",
+            "data": "....",
+            "valid": false
+        },
+        {
+            "description": "too many chars",
+            "data": "ABCD",
+            "valid": false
+        },
+        {
+            "description": "invalid char ?",
+            "data": "?00",
+            "valid": false
+        },
+        {
+            "description": "mix of lowercase and uppercase chars",
+            "data": "abC",
+            "valid": false
+        },
+        {
+            "description": "mix of digit, lowercase and uppercase chars",
+            "data": "a0C",
+            "valid": false
+        },
+        {
+            "description": "mix of wildcard, lowercase and uppercase chars",
+            "data": "a.C",
+            "valid": false
+        },
+        {
+            "description": "invalid char #",
+            "data": "24#",
+            "valid": false
+        },
+        {
+            "description": "invalid whitespace",
+            "data": "24 ",
+            "valid": false
+        },
+        {
+            "description": "invalid whitespace",
+            "data": "2 5",
+            "valid": false
+        },
+        {
+            "description": "invalid whitespace",
+            "data": " 45",
+            "valid": false
+        }
+    ]
+}

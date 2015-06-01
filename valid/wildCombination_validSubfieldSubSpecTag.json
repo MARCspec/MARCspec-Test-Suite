@@ -1,0 +1,3748 @@
+{
+    "description": "wild combination of valid field tag with subspec and subfield tag",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "valid wild combination: all wildcards && subfield with single lowercase alpha subfieldtag",
+            "data": "...{245$a}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfield with single lowercase alpha subfieldtag",
+            "data": "...{245$a}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfield with single digit subfieldtag",
+            "data": "...{245$a}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all wildcards && subfieldrange with lowercase subfieldtags",
+            "data": "...{245$a}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfield with single digit subfieldtag",
+            "data": "...{$a}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left with digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{?$a}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{?$a}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfield with single digit subfieldtag",
+            "data": "...{?$a}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left with two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{?$a}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{!$a}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{!$a}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfield with single digit subfieldtag",
+            "data": "...{!$a}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: wildcard between digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{!$a}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a=$b}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a=$b}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfield with single digit subfieldtag",
+            "data": "...{$a=$b}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two digits wildcard right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a=$b}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a!=$b}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a!=$b}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfield with single digit subfieldtag",
+            "data": "...{$a!=$b}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one digit two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!=$b}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\Poe}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\Poe}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfield with single digit subfieldtag",
+            "data": "...{$a~\\Poe}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\Poe}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a!~\\Poe}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a!~\\Poe}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfield with single digit subfieldtag",
+            "data": "...{$a!~\\Poe}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars special leader && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a!~\\Poe}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{__1$a~\\Poe}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{__1$a~\\Poe}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfield with single digit subfieldtag",
+            "data": "...{__1$a~\\Poe}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{__1$a~\\Poe}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfield with single lowercase alpha subfieldtag",
+            "data": "...{\/#=\\\/}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfield with single lowercase alpha subfieldtag",
+            "data": "...{\/#=\\\/}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfield with single digit subfieldtag",
+            "data": "...{\/#=\\\/}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards left one uppercase char && subfieldrange with lowercase subfieldtags",
+            "data": "...{\/#=\\\/}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a|$b}{$c}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a|$b}{$c}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfield with single digit subfieldtag",
+            "data": "...{$a|$b}{$c}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left two uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a}{$b|$c}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a}{$b|$c}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfield with single digit subfieldtag",
+            "data": "...{$a}{$b|$c}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard between uppercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a}{$b|$c}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a|$b}{$c|$d}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a|$b}{$c|$d}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfield with single digit subfieldtag",
+            "data": "...{$a|$b}{$c|$d}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one uppercase char two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b}{$c|$d}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a|$b|$c}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a|$b|$c}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfield with single digit subfieldtag",
+            "data": "...{$a|$b|$c}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix one lowercase char and two digits && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a|$b|$c}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\$}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\$}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\$}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: mix two lowercase chars and one digit && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\$}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\{}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\{}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\{}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\{}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\}}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\}}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\}}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: two wildcards and one lowercase char right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\}}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\!}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\!}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\!}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one wildcard left and two lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\!}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\=}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\=}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\=}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: one lowercase and two wildcards right && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\=}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\~}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\~}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\~}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\~}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\?}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\?}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\?}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\?}$~",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\|}$a",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single lowercase alpha subfieldtag",
+            "data": "...{$a~\\test\\|}$z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfield with single digit subfieldtag",
+            "data": "...{$a~\\test\\|}$0",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$9",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$!",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$#",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$$",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$%",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$&",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$'",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$(",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$)",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$*",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$+",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$,",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$-",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$.",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$\/",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$:",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$;",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$<",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$=",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$>",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$?",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$[",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$\\",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$^",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$_",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$`",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}${",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: all lowercase chars && subfieldrange with lowercase subfieldtags",
+            "data": "...{$a~\\test\\|}$~",
+            "valid": true
+        }
+    ]
+}

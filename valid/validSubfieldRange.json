@@ -1,0 +1,19 @@
+{
+    "description": "subfield ranges are strings and match pattern",
+    "schema": {
+      "type": "string",
+      "pattern": "^((?:(?:[a-z]\\-[a-z])|(?:[0-9]\\-[0-9])))$"
+    },
+    "tests": [
+        {
+            "description": "subfield range with lowercase subfieldtags",
+            "data": "a-z",
+            "valid": true
+        },
+        {
+            "description": "subfield range with digits",
+            "data": "0-9",
+            "valid": true
+        }
+    ]
+}

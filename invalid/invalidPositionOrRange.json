@@ -1,0 +1,54 @@
+{
+    "description": "positions or ranges are strings and match pattern",
+    "schema": {
+      "type": "string",
+      "pattern": "(?:(?:(^[0-9]+|^#)\\-([0-9]+$|#$))|(^[0-9]+$|^#$))"
+    },
+    "tests": [
+        {
+            "description": "an integer is not a string",
+            "data": 1,
+            "valid": false
+        },
+        {
+            "description": "empty string",
+            "data": "",
+            "valid": false
+        },
+        {
+            "description": "whitespace is not allowed",
+            "data": "1- 2",
+            "valid": false
+        },
+        {
+            "description": "only one hyphen allwed",
+            "data": "1-2-",
+            "valid": false
+        },
+        {
+            "description": "missing starting position",
+            "data": "-2",
+            "valid": false
+        },
+        {
+            "description": "only digits, one hyphen and the char '#' are allowed",
+            "data": "1-X",
+            "valid": false
+        },
+        {
+            "description": "missing ending position",
+            "data": "#-",
+            "valid": false
+        },
+        {
+            "description": "this matches pattern, but starting position number must not be higher than ending position number",
+            "data": "2-1",
+            "valid": false
+        },
+        {
+            "description": "only digits, one hyphen and the char '#' are allowed",
+            "data": "?",
+            "valid": false
+        }
+    ]
+}

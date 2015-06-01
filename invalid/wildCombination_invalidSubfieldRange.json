@@ -1,0 +1,33 @@
+{
+    "description": "wild combination of valid field tag and invalid subfield range",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "invalid wild combination: mix of alpha and digit",
+            "data": "...$a-9",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: mix of digit and alpha",
+            "data": "...$0-a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: matches the pattern but not a valid subfield tag range",
+            "data": "...$1-0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: matches the pattern but not a valid subfield tag range",
+            "data": "...$z-a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: uppercase chars are not allowed",
+            "data": "...$A-Z",
+            "valid": false
+        }
+    ]
+}

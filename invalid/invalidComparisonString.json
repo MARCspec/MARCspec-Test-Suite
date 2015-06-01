@@ -1,0 +1,44 @@
+{
+    "description": "comparison strings are strings and match pattern",
+    "schema": {
+      "type": "string",
+      "pattern": "^((?:[^${}!=~?|\\s]|(?<=\\\\)[${}!=~?|])+)$"
+    },
+    "tests": [
+        {
+            "description": "whitespaces are not allowed",
+            "data": "te st\\?",
+            "valid": false
+        },
+        {
+            "description": "unescaped character '$'",
+            "data": "test$",
+            "valid": false
+        },
+        {
+            "description": "unescaped character '}'",
+            "data": "te}st",
+            "valid": false
+        },
+        {
+            "description": "unescaped character '{'",
+            "data": "test{",
+            "valid": false
+        },
+        {
+            "description": "unescaped character '='",
+            "data": "=test",
+            "valid": false
+        },
+        {
+            "description": "unescaped character '~'",
+            "data": "test~",
+            "valid": false
+        },
+        {
+            "description": "unescaped character '?'",
+            "data": "test?",
+            "valid": false
+        }
+    ]
+}

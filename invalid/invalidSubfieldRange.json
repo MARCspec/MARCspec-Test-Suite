@@ -1,0 +1,33 @@
+{
+    "description": "subfield ranges are strings and match pattern",
+    "schema": {
+      "type": "string",
+      "pattern": "^((?:(?:[a-z]\\-[a-z])|(?:[0-9]\\-[0-9])))$"
+    },
+    "tests": [
+        {
+            "description": "mix of alpha and digit",
+            "data": "a-9",
+            "valid": false
+        },{
+            "description": "mix of digit and alpha",
+            "data": "0-a",
+            "valid": false
+        },
+        {
+            "description": "matches the pattern but not a valid subfield tag range",
+            "data": "1-0",
+            "valid": false
+        },
+        {
+            "description": "matches the pattern but not a valid subfield tag range",
+            "data": "z-a",
+            "valid": false
+        },
+        {
+            "description": "uppercase chars are not allowed",
+            "data": "A-Z",
+            "valid": false
+        }
+    ]
+}

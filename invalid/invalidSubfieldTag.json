@@ -1,0 +1,38 @@
+{
+    "description": "subfield tags are strings and match pattern",
+    "schema": {
+      "type": "string",
+      "pattern": "^([\\!-\\?\\[-\\{\\}-~])$"
+    },
+    "tests": [
+        {
+            "description": "integer is not a string",
+            "data": 0,
+            "valid": false
+        },{
+            "description": "whitespace is not allowed",
+            "data": " a",
+            "valid": false
+        },
+        {
+            "description": "char 'ß' is not allowed",
+            "data": "ß",
+            "valid": false
+        },
+        {
+            "description": "subfield with single digit subfieldtag",
+            "data": "|",
+            "valid": false
+        },
+        {
+            "description": "uppercase chars are not allowed",
+            "data": "A",
+            "valid": false
+        },
+        {
+            "description": "only one digit allowed",
+            "data": "10",
+            "valid": false
+        }
+    ]
+}

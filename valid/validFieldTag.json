@@ -1,0 +1,109 @@
+{
+    "description": "field tags are strings and match pattern",
+    "schema": {
+      "type": "string",
+      "pattern": "^([.a-z0-9]{3,3}|[.A-Z0-9]{3,3})$"
+    },
+    "tests": [
+        {
+            "description": "all wildcards",
+            "data": "...",
+            "valid": true
+        },
+        {
+            "description": "two wildcards left with digit",
+            "data": "..0",
+            "valid": true
+        },
+        {
+            "description": "one wildcard left with two digits",
+            "data": ".00",
+            "valid": true
+        },
+        {
+            "description": "wildcard between digits",
+            "data": "1.0",
+            "valid": true
+        },
+        {
+            "description": "two digits wildcard right",
+            "data": "20.",
+            "valid": true
+        },
+        {
+            "description": "one digit two wildcards right",
+            "data": "2..",
+            "valid": true
+        },
+        {
+            "description": "all digits",
+            "data": "300",
+            "valid": true
+        },
+        {
+            "description": "all uppercase chars special leader",
+            "data": "LDR",
+            "valid": true
+        },
+        {
+            "description": "all uppercase chars",
+            "data": "ABC",
+            "valid": true
+        },
+        {
+            "description": "two wildcards left one uppercase char",
+            "data": "..C",
+            "valid": true
+        },
+        {
+            "description": "one wildcard left two uppercase chars",
+            "data": ".BC",
+            "valid": true
+        },
+        {
+            "description": "one wildcard between uppercase chars",
+            "data": "A.C",
+            "valid": true
+        },
+        {
+            "description": "one uppercase char two wildcards right",
+            "data": "A..",
+            "valid": true
+        },
+        {
+            "description": "mix one lowercase char and two digits",
+            "data": "a00",
+            "valid": true
+        },
+        {
+            "description": "mix two lowercase chars and one digit",
+            "data": "aa0",
+            "valid": true
+        },
+        {
+            "description": "all lowercase chars",
+            "data": "abc",
+            "valid": true
+        },
+        {
+            "description": "two wildcards and one lowercase char right",
+            "data": "..c",
+            "valid": true
+        },
+        {
+            "description": "one wildcard left and two lowercase chars",
+            "data": ".bc",
+            "valid": true
+        },
+        {
+            "description": "one lowercase and two wildcards right",
+            "data": "a..",
+            "valid": true
+        },
+        {
+            "description": "all lowercase chars",
+            "data": "abc",
+            "valid": true
+        }
+    ]
+}

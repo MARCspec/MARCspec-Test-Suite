@@ -1,0 +1,228 @@
+{
+    "description": "wild combination of valid field tag, subfield range and subspec",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all wildcards",
+            "data": "...$a-z{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && two wildcards left with digit",
+            "data": "...$a-z{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && one wildcard left with two digits",
+            "data": "...$a-z{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && wildcard between digits",
+            "data": "...$a-z{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && two digits wildcard right",
+            "data": "...$a-z{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && one digit two wildcards right",
+            "data": "...$a-z{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all digits",
+            "data": "...$a-z{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all uppercase chars special leader",
+            "data": "...$a-z{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all uppercase chars",
+            "data": "...$a-z{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && two wildcards left one uppercase char",
+            "data": "...$a-z{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && one wildcard left two uppercase chars",
+            "data": "...$a-z{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && one wildcard between uppercase chars",
+            "data": "...$a-z{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && one uppercase char two wildcards right",
+            "data": "...$a-z{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && mix one lowercase char and two digits",
+            "data": "...$a-z{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && mix two lowercase chars and one digit",
+            "data": "...$a-z{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all lowercase chars",
+            "data": "...$a-z{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && two wildcards and one lowercase char right",
+            "data": "...$a-z{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && one wildcard left and two lowercase chars",
+            "data": "...$a-z{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && one lowercase and two wildcards right",
+            "data": "...$a-z{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all lowercase chars",
+            "data": "...$a-z{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all lowercase chars",
+            "data": "...$a-z{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags && all lowercase chars",
+            "data": "...$a-z{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all wildcards",
+            "data": "...$0-9{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && two wildcards left with digit",
+            "data": "...$0-9{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && one wildcard left with two digits",
+            "data": "...$0-9{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && wildcard between digits",
+            "data": "...$0-9{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && two digits wildcard right",
+            "data": "...$0-9{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && one digit two wildcards right",
+            "data": "...$0-9{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all digits",
+            "data": "...$0-9{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all uppercase chars special leader",
+            "data": "...$0-9{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all uppercase chars",
+            "data": "...$0-9{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && two wildcards left one uppercase char",
+            "data": "...$0-9{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && one wildcard left two uppercase chars",
+            "data": "...$0-9{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && one wildcard between uppercase chars",
+            "data": "...$0-9{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && one uppercase char two wildcards right",
+            "data": "...$0-9{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && mix one lowercase char and two digits",
+            "data": "...$0-9{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && mix two lowercase chars and one digit",
+            "data": "...$0-9{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all lowercase chars",
+            "data": "...$0-9{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && two wildcards and one lowercase char right",
+            "data": "...$0-9{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && one wildcard left and two lowercase chars",
+            "data": "...$0-9{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && one lowercase and two wildcards right",
+            "data": "...$0-9{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all lowercase chars",
+            "data": "...$0-9{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all lowercase chars",
+            "data": "...$0-9{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits && all lowercase chars",
+            "data": "...$0-9{$a~\\test\\|}",
+            "valid": true
+        }
+    ]
+}
