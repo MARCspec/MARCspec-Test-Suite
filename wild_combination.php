@@ -50,6 +50,7 @@ function make_json($json,$valid,$desc,$name)
     $obj['tests'] = [];
     foreach($json as $jt)
     {
+        if(!is_string($jt->{'data'})) continue;
         $_t['description'] = $validtext.' wild combination: '.$jt->{'description'};
         $_t['data'] = '...'.$jt->{'data'};
         $_t['valid'] = $valid;
@@ -84,6 +85,7 @@ function combine($_t1,$_t2)
         {
             foreach($_t2 as $t2)
             {
+                if(!is_string($t1->{'data'}) || !is_string($t2->{'data'})) continue;
                 $_t = new stdClass();
                 $_t->{'data'} = $t1->{'data'}.$t2->{'data'};
                 $_t->{'description'} =  $t1->{'description'}.' && '.$t2->{'description'};
