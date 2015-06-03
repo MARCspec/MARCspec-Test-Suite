@@ -1,0 +1,63 @@
+{
+    "description": "wild combination of valid field tag and index",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "valid wild combination: last position",
+            "data": "...[#]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position",
+            "data": "...[0]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten",
+            "data": "...[9]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven",
+            "data": "...[10]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101",
+            "data": "...[100]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second",
+            "data": "...[0-1]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last",
+            "data": "...[0-#]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position",
+            "data": "...[0-0]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position",
+            "data": "...[#-#]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position",
+            "data": "...[#-0]",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted)",
+            "data": "...[#-1]",
+            "valid": true
+        }
+    ]
+}

@@ -1,0 +1,503 @@
+{
+    "description": "wild combination of valid field tag and charspec",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "invalid wild combination: last position && first indicator is null second is omitted\/wildcard",
+            "data": "...\/#_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && first indicator is null second is blank\/wildcard",
+            "data": "...\/#_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && first indicator is null second is one",
+            "data": "...\/#_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && first indicator is one second is 'z'",
+            "data": "...\/#_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && first indicator is blank\/wildcard second is one",
+            "data": "...\/#__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/#_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/#__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/#_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: last position && both blank\/wildcard",
+            "data": "...\/#___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is null second is omitted\/wildcard",
+            "data": "...\/0_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is null second is blank\/wildcard",
+            "data": "...\/0_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is null second is one",
+            "data": "...\/0_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is one second is 'z'",
+            "data": "...\/0_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is blank\/wildcard second is one",
+            "data": "...\/0__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/0_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/0__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/0_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: first position && both blank\/wildcard",
+            "data": "...\/0___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is null second is omitted\/wildcard",
+            "data": "...\/9_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is null second is blank\/wildcard",
+            "data": "...\/9_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is null second is one",
+            "data": "...\/9_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is one second is 'z'",
+            "data": "...\/9_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is blank\/wildcard second is one",
+            "data": "...\/9__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/9_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/9__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/9_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position ten && both blank\/wildcard",
+            "data": "...\/9___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is null second is omitted\/wildcard",
+            "data": "...\/10_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is null second is blank\/wildcard",
+            "data": "...\/10_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is null second is one",
+            "data": "...\/10_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is one second is 'z'",
+            "data": "...\/10_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is blank\/wildcard second is one",
+            "data": "...\/10__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/10_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/10__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/10_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position eleven && both blank\/wildcard",
+            "data": "...\/10___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is null second is omitted\/wildcard",
+            "data": "...\/100_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is null second is blank\/wildcard",
+            "data": "...\/100_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is null second is one",
+            "data": "...\/100_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is one second is 'z'",
+            "data": "...\/100_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is blank\/wildcard second is one",
+            "data": "...\/100__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/100_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/100__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/100_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: position 101 && both blank\/wildcard",
+            "data": "...\/100___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is null second is omitted\/wildcard",
+            "data": "...\/0-1_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is null second is blank\/wildcard",
+            "data": "...\/0-1_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is null second is one",
+            "data": "...\/0-1_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is one second is 'z'",
+            "data": "...\/0-1_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is blank\/wildcard second is one",
+            "data": "...\/0-1__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/0-1_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/0-1__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/0-1_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to second && both blank\/wildcard",
+            "data": "...\/0-1___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is null second is omitted\/wildcard",
+            "data": "...\/0-#_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is null second is blank\/wildcard",
+            "data": "...\/0-#_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is null second is one",
+            "data": "...\/0-#_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is one second is 'z'",
+            "data": "...\/0-#_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is blank\/wildcard second is one",
+            "data": "...\/0-#__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/0-#_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/0-#__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/0-#_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to last && both blank\/wildcard",
+            "data": "...\/0-#___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is null second is omitted\/wildcard",
+            "data": "...\/0-0_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is null second is blank\/wildcard",
+            "data": "...\/0-0_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is null second is one",
+            "data": "...\/0-0_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is one second is 'z'",
+            "data": "...\/0-0_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is blank\/wildcard second is one",
+            "data": "...\/0-0__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/0-0_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/0-0__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/0-0_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from first position to first position, is like first position && both blank\/wildcard",
+            "data": "...\/0-0___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is null second is omitted\/wildcard",
+            "data": "...\/#-#_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is null second is blank\/wildcard",
+            "data": "...\/#-#_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is null second is one",
+            "data": "...\/#-#_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is one second is 'z'",
+            "data": "...\/#-#_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is blank\/wildcard second is one",
+            "data": "...\/#-#__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/#-#_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/#-#__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/#-#_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to last position, is like last position && both blank\/wildcard",
+            "data": "...\/#-#___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is null second is omitted\/wildcard",
+            "data": "...\/#-0_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is null second is blank\/wildcard",
+            "data": "...\/#-0_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is null second is one",
+            "data": "...\/#-0_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is one second is 'z'",
+            "data": "...\/#-0_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is blank\/wildcard second is one",
+            "data": "...\/#-0__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/#-0_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/#-0__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/#-0_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position one (index reverted), is like last position && both blank\/wildcard",
+            "data": "...\/#-0___",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is null second is omitted\/wildcard",
+            "data": "...\/#-1_0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is null second is blank\/wildcard",
+            "data": "...\/#-1_0_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is null second is one",
+            "data": "...\/#-1_01",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is one second is 'z'",
+            "data": "...\/#-1_1z",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is blank\/wildcard second is one",
+            "data": "...\/#-1__1",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is 'a' second is omitted\/wildcard\/wildcard",
+            "data": "...\/#-1_a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is blank\/wildcard second is 'b'",
+            "data": "...\/#-1__b",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && first indicator is 'a' second is blank\/wildcard",
+            "data": "...\/#-1_a_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: range from last position to position two (index reverted) && both blank\/wildcard",
+            "data": "...\/#-1___",
+            "valid": false
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "description": "wild combination of valid field tag and subfield range",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "valid wild combination: subfield range with lowercase subfieldtags",
+            "data": "...$a-z",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: subfield range with digits",
+            "data": "...$0-9",
+            "valid": true
+        }
+    ]
+}

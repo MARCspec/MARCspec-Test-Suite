@@ -1,0 +1,38 @@
+{
+    "description": "wild combination of valid field tag and invalid subfield tag",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "invalid wild combination: integer is not a string",
+            "data": "...$0",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: whitespace is not allowed",
+            "data": "...$ a",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: char '\u00df' is not allowed",
+            "data": "...$\u00df",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: subfield with single digit subfieldtag",
+            "data": "...$|",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: uppercase chars are not allowed",
+            "data": "...$A",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: only one digit allowed",
+            "data": "...$10",
+            "valid": false
+        }
+    ]
+}

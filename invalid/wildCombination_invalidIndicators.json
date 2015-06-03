@@ -1,0 +1,23 @@
+{
+    "description": "wild combination of valid field tag and invalid indicator",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "invalid wild combination: only three characters allowed",
+            "data": "..._12_",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: not allowed character at indicator one",
+            "data": "..._$",
+            "valid": false
+        },
+        {
+            "description": "invalid wild combination: not allowed character at indicator two",
+            "data": "..._1|",
+            "valid": false
+        }
+    ]
+}
