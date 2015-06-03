@@ -2,7 +2,7 @@
     "description": "comparison strings are strings and match pattern",
     "schema": {
         "type": "string",
-        "pattern": "^((?:[^${}!=~?|\\s]|(?<=\\\\)[${}!=~?|])+)$"
+        "pattern": "^(.(?:[^${}!=~?|\\s]|(?<=\\\\)[${}!=~?|])+)$"
     },
     "tests": [
         {
@@ -43,6 +43,11 @@
         {
             "description": "subfieldrange with lowercase subfieldtags",
             "data": "tes\\st\\|",
+            "valid": true
+        },
+        {
+            "description": "unescaped character '=' at beginning is valid",
+            "data": "=test",
             "valid": true
         }
     ]

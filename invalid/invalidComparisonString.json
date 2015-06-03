@@ -26,11 +26,6 @@
             "valid": false
         },
         {
-            "description": "unescaped character '='",
-            "data": "=test",
-            "valid": false
-        },
-        {
             "description": "unescaped character '~'",
             "data": "test~",
             "valid": false
