@@ -34,8 +34,13 @@ function get_and_decode($path,$callback)
     if(!$callback) return $json->{'tests'};
     array_walk(
     $json->{'tests'},
-    function(&$v, $k) use ($callback)
+    function(&$v, $k) use ($callback,&$json)
     {
+        if(!is_string($v->{'data'})) 
+            {
+                unset($json->{'tests'}->{$k});
+                return;
+            }
         $v->{'data'} = $callback($v->{'data'});
     }
     );
@@ -50,7 +55,6 @@ function make_json($json,$valid,$desc,$name)
     $obj['tests'] = [];
     foreach($json as $jt)
     {
-        if(!is_string($jt->{'data'})) continue;
         $_t['description'] = $validtext.' wild combination: '.$jt->{'description'};
         $_t['data'] = '...'.$jt->{'data'};
         $_t['valid'] = $valid;

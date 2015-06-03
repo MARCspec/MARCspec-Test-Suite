@@ -6,7 +6,7 @@
     "tests": [
         {
             "description": "invalid wild combination: integer is not a string",
-            "data": "...$0",
+            "data": "...0",
             "valid": false
         },
         {
