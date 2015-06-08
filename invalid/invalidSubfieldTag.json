@@ -6,10 +6,6 @@
     },
     "tests": [
         {
-            "description": "integer is not a string",
-            "data": 0,
-            "valid": false
-        },{
             "description": "whitespace is not allowed",
             "data": " a",
             "valid": false

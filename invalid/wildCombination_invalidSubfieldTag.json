@@ -5,11 +5,6 @@
     },
     "tests": [
         {
-            "description": "invalid wild combination: integer is not a string",
-            "data": "...0",
-            "valid": false
-        },
-        {
             "description": "invalid wild combination: whitespace is not allowed",
             "data": "...$ a",
             "valid": false

@@ -6,11 +6,6 @@
     },
     "tests": [
         {
-            "description": "an integer is not a string",
-            "data": 245,
-            "valid": false
-        },
-        {
             "description": "too many wildcards",
             "data": "....",
             "valid": false
