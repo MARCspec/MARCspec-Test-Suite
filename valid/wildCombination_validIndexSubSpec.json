@@ -1,0 +1,1218 @@
+{
+    "description": "wild combination of valid field tag, index and subspec",
+    "schema": {
+        "type": "string"
+    },
+    "tests": [
+        {
+            "description": "valid wild combination: last position && all wildcards",
+            "data": "...[#]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && two wildcards left with digit",
+            "data": "...[#]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && one wildcard left with two digits",
+            "data": "...[#]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && wildcard between digits",
+            "data": "...[#]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && two digits wildcard right",
+            "data": "...[#]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && one digit two wildcards right",
+            "data": "...[#]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && all digits",
+            "data": "...[#]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && all uppercase chars special leader",
+            "data": "...[#]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && all uppercase chars",
+            "data": "...[#]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && two wildcards left one uppercase char",
+            "data": "...[#]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && one wildcard left two uppercase chars",
+            "data": "...[#]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && one wildcard between uppercase chars",
+            "data": "...[#]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && one uppercase char two wildcards right",
+            "data": "...[#]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && mix one lowercase char and two digits",
+            "data": "...[#]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && mix two lowercase chars and one digit",
+            "data": "...[#]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && all lowercase chars",
+            "data": "...[#]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && two wildcards and one lowercase char right",
+            "data": "...[#]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && one wildcard left and two lowercase chars",
+            "data": "...[#]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && one lowercase and two wildcards right",
+            "data": "...[#]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && all lowercase chars",
+            "data": "...[#]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && all lowercase chars",
+            "data": "...[#]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: last position && all lowercase chars",
+            "data": "...[#]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all wildcards",
+            "data": "...[0]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && two wildcards left with digit",
+            "data": "...[0]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && one wildcard left with two digits",
+            "data": "...[0]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && wildcard between digits",
+            "data": "...[0]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && two digits wildcard right",
+            "data": "...[0]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && one digit two wildcards right",
+            "data": "...[0]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all digits",
+            "data": "...[0]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all uppercase chars special leader",
+            "data": "...[0]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all uppercase chars",
+            "data": "...[0]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && two wildcards left one uppercase char",
+            "data": "...[0]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && one wildcard left two uppercase chars",
+            "data": "...[0]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && one wildcard between uppercase chars",
+            "data": "...[0]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && one uppercase char two wildcards right",
+            "data": "...[0]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && mix one lowercase char and two digits",
+            "data": "...[0]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && mix two lowercase chars and one digit",
+            "data": "...[0]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all lowercase chars",
+            "data": "...[0]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && two wildcards and one lowercase char right",
+            "data": "...[0]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && one wildcard left and two lowercase chars",
+            "data": "...[0]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && one lowercase and two wildcards right",
+            "data": "...[0]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all lowercase chars",
+            "data": "...[0]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all lowercase chars",
+            "data": "...[0]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: first position && all lowercase chars",
+            "data": "...[0]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all wildcards",
+            "data": "...[9]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && two wildcards left with digit",
+            "data": "...[9]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && one wildcard left with two digits",
+            "data": "...[9]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && wildcard between digits",
+            "data": "...[9]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && two digits wildcard right",
+            "data": "...[9]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && one digit two wildcards right",
+            "data": "...[9]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all digits",
+            "data": "...[9]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all uppercase chars special leader",
+            "data": "...[9]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all uppercase chars",
+            "data": "...[9]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && two wildcards left one uppercase char",
+            "data": "...[9]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && one wildcard left two uppercase chars",
+            "data": "...[9]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && one wildcard between uppercase chars",
+            "data": "...[9]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && one uppercase char two wildcards right",
+            "data": "...[9]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && mix one lowercase char and two digits",
+            "data": "...[9]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && mix two lowercase chars and one digit",
+            "data": "...[9]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all lowercase chars",
+            "data": "...[9]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && two wildcards and one lowercase char right",
+            "data": "...[9]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && one wildcard left and two lowercase chars",
+            "data": "...[9]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && one lowercase and two wildcards right",
+            "data": "...[9]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all lowercase chars",
+            "data": "...[9]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all lowercase chars",
+            "data": "...[9]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position ten && all lowercase chars",
+            "data": "...[9]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all wildcards",
+            "data": "...[10]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && two wildcards left with digit",
+            "data": "...[10]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && one wildcard left with two digits",
+            "data": "...[10]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && wildcard between digits",
+            "data": "...[10]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && two digits wildcard right",
+            "data": "...[10]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && one digit two wildcards right",
+            "data": "...[10]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all digits",
+            "data": "...[10]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all uppercase chars special leader",
+            "data": "...[10]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all uppercase chars",
+            "data": "...[10]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && two wildcards left one uppercase char",
+            "data": "...[10]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && one wildcard left two uppercase chars",
+            "data": "...[10]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && one wildcard between uppercase chars",
+            "data": "...[10]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && one uppercase char two wildcards right",
+            "data": "...[10]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && mix one lowercase char and two digits",
+            "data": "...[10]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && mix two lowercase chars and one digit",
+            "data": "...[10]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all lowercase chars",
+            "data": "...[10]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && two wildcards and one lowercase char right",
+            "data": "...[10]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && one wildcard left and two lowercase chars",
+            "data": "...[10]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && one lowercase and two wildcards right",
+            "data": "...[10]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all lowercase chars",
+            "data": "...[10]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all lowercase chars",
+            "data": "...[10]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position eleven && all lowercase chars",
+            "data": "...[10]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all wildcards",
+            "data": "...[100]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && two wildcards left with digit",
+            "data": "...[100]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && one wildcard left with two digits",
+            "data": "...[100]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && wildcard between digits",
+            "data": "...[100]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && two digits wildcard right",
+            "data": "...[100]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && one digit two wildcards right",
+            "data": "...[100]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all digits",
+            "data": "...[100]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all uppercase chars special leader",
+            "data": "...[100]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all uppercase chars",
+            "data": "...[100]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && two wildcards left one uppercase char",
+            "data": "...[100]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && one wildcard left two uppercase chars",
+            "data": "...[100]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && one wildcard between uppercase chars",
+            "data": "...[100]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && one uppercase char two wildcards right",
+            "data": "...[100]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && mix one lowercase char and two digits",
+            "data": "...[100]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && mix two lowercase chars and one digit",
+            "data": "...[100]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all lowercase chars",
+            "data": "...[100]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && two wildcards and one lowercase char right",
+            "data": "...[100]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && one wildcard left and two lowercase chars",
+            "data": "...[100]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && one lowercase and two wildcards right",
+            "data": "...[100]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all lowercase chars",
+            "data": "...[100]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all lowercase chars",
+            "data": "...[100]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: position 101 && all lowercase chars",
+            "data": "...[100]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all wildcards",
+            "data": "...[0-1]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && two wildcards left with digit",
+            "data": "...[0-1]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && one wildcard left with two digits",
+            "data": "...[0-1]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && wildcard between digits",
+            "data": "...[0-1]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && two digits wildcard right",
+            "data": "...[0-1]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && one digit two wildcards right",
+            "data": "...[0-1]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all digits",
+            "data": "...[0-1]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all uppercase chars special leader",
+            "data": "...[0-1]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all uppercase chars",
+            "data": "...[0-1]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && two wildcards left one uppercase char",
+            "data": "...[0-1]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && one wildcard left two uppercase chars",
+            "data": "...[0-1]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && one wildcard between uppercase chars",
+            "data": "...[0-1]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && one uppercase char two wildcards right",
+            "data": "...[0-1]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && mix one lowercase char and two digits",
+            "data": "...[0-1]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && mix two lowercase chars and one digit",
+            "data": "...[0-1]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all lowercase chars",
+            "data": "...[0-1]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && two wildcards and one lowercase char right",
+            "data": "...[0-1]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && one wildcard left and two lowercase chars",
+            "data": "...[0-1]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && one lowercase and two wildcards right",
+            "data": "...[0-1]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all lowercase chars",
+            "data": "...[0-1]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all lowercase chars",
+            "data": "...[0-1]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to second && all lowercase chars",
+            "data": "...[0-1]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all wildcards",
+            "data": "...[0-#]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && two wildcards left with digit",
+            "data": "...[0-#]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && one wildcard left with two digits",
+            "data": "...[0-#]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && wildcard between digits",
+            "data": "...[0-#]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && two digits wildcard right",
+            "data": "...[0-#]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && one digit two wildcards right",
+            "data": "...[0-#]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all digits",
+            "data": "...[0-#]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all uppercase chars special leader",
+            "data": "...[0-#]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all uppercase chars",
+            "data": "...[0-#]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && two wildcards left one uppercase char",
+            "data": "...[0-#]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && one wildcard left two uppercase chars",
+            "data": "...[0-#]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && one wildcard between uppercase chars",
+            "data": "...[0-#]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && one uppercase char two wildcards right",
+            "data": "...[0-#]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && mix one lowercase char and two digits",
+            "data": "...[0-#]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && mix two lowercase chars and one digit",
+            "data": "...[0-#]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all lowercase chars",
+            "data": "...[0-#]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && two wildcards and one lowercase char right",
+            "data": "...[0-#]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && one wildcard left and two lowercase chars",
+            "data": "...[0-#]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && one lowercase and two wildcards right",
+            "data": "...[0-#]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all lowercase chars",
+            "data": "...[0-#]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all lowercase chars",
+            "data": "...[0-#]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to last && all lowercase chars",
+            "data": "...[0-#]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all wildcards",
+            "data": "...[0-0]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && two wildcards left with digit",
+            "data": "...[0-0]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && one wildcard left with two digits",
+            "data": "...[0-0]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && wildcard between digits",
+            "data": "...[0-0]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && two digits wildcard right",
+            "data": "...[0-0]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && one digit two wildcards right",
+            "data": "...[0-0]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all digits",
+            "data": "...[0-0]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all uppercase chars special leader",
+            "data": "...[0-0]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all uppercase chars",
+            "data": "...[0-0]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && two wildcards left one uppercase char",
+            "data": "...[0-0]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && one wildcard left two uppercase chars",
+            "data": "...[0-0]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && one wildcard between uppercase chars",
+            "data": "...[0-0]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && one uppercase char two wildcards right",
+            "data": "...[0-0]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && mix one lowercase char and two digits",
+            "data": "...[0-0]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && mix two lowercase chars and one digit",
+            "data": "...[0-0]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all lowercase chars",
+            "data": "...[0-0]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && two wildcards and one lowercase char right",
+            "data": "...[0-0]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && one wildcard left and two lowercase chars",
+            "data": "...[0-0]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && one lowercase and two wildcards right",
+            "data": "...[0-0]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all lowercase chars",
+            "data": "...[0-0]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all lowercase chars",
+            "data": "...[0-0]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from first position to first position, is like first position && all lowercase chars",
+            "data": "...[0-0]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all wildcards",
+            "data": "...[#-#]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && two wildcards left with digit",
+            "data": "...[#-#]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && one wildcard left with two digits",
+            "data": "...[#-#]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && wildcard between digits",
+            "data": "...[#-#]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && two digits wildcard right",
+            "data": "...[#-#]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && one digit two wildcards right",
+            "data": "...[#-#]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all digits",
+            "data": "...[#-#]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all uppercase chars special leader",
+            "data": "...[#-#]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all uppercase chars",
+            "data": "...[#-#]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && two wildcards left one uppercase char",
+            "data": "...[#-#]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && one wildcard left two uppercase chars",
+            "data": "...[#-#]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && one wildcard between uppercase chars",
+            "data": "...[#-#]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && one uppercase char two wildcards right",
+            "data": "...[#-#]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && mix one lowercase char and two digits",
+            "data": "...[#-#]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && mix two lowercase chars and one digit",
+            "data": "...[#-#]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all lowercase chars",
+            "data": "...[#-#]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && two wildcards and one lowercase char right",
+            "data": "...[#-#]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && one wildcard left and two lowercase chars",
+            "data": "...[#-#]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && one lowercase and two wildcards right",
+            "data": "...[#-#]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all lowercase chars",
+            "data": "...[#-#]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all lowercase chars",
+            "data": "...[#-#]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to last position, is like last position && all lowercase chars",
+            "data": "...[#-#]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all wildcards",
+            "data": "...[#-0]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && two wildcards left with digit",
+            "data": "...[#-0]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && one wildcard left with two digits",
+            "data": "...[#-0]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && wildcard between digits",
+            "data": "...[#-0]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && two digits wildcard right",
+            "data": "...[#-0]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && one digit two wildcards right",
+            "data": "...[#-0]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all digits",
+            "data": "...[#-0]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all uppercase chars special leader",
+            "data": "...[#-0]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all uppercase chars",
+            "data": "...[#-0]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && two wildcards left one uppercase char",
+            "data": "...[#-0]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && one wildcard left two uppercase chars",
+            "data": "...[#-0]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && one wildcard between uppercase chars",
+            "data": "...[#-0]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && one uppercase char two wildcards right",
+            "data": "...[#-0]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && mix one lowercase char and two digits",
+            "data": "...[#-0]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && mix two lowercase chars and one digit",
+            "data": "...[#-0]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all lowercase chars",
+            "data": "...[#-0]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && two wildcards and one lowercase char right",
+            "data": "...[#-0]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && one wildcard left and two lowercase chars",
+            "data": "...[#-0]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && one lowercase and two wildcards right",
+            "data": "...[#-0]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all lowercase chars",
+            "data": "...[#-0]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all lowercase chars",
+            "data": "...[#-0]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all lowercase chars",
+            "data": "...[#-0]{$a~\\test\\|}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all wildcards",
+            "data": "...[#-1]{245$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && two wildcards left with digit",
+            "data": "...[#-1]{$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && one wildcard left with two digits",
+            "data": "...[#-1]{?$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && wildcard between digits",
+            "data": "...[#-1]{!$a}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && two digits wildcard right",
+            "data": "...[#-1]{$a=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && one digit two wildcards right",
+            "data": "...[#-1]{$a!=$b}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all digits",
+            "data": "...[#-1]{$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all uppercase chars special leader",
+            "data": "...[#-1]{$a!~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all uppercase chars",
+            "data": "...[#-1]{__1$a~\\Poe}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && two wildcards left one uppercase char",
+            "data": "...[#-1]{\/#=\\\/}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && one wildcard left two uppercase chars",
+            "data": "...[#-1]{$a|$b}{$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && one wildcard between uppercase chars",
+            "data": "...[#-1]{$a}{$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && one uppercase char two wildcards right",
+            "data": "...[#-1]{$a|$b}{$c|$d}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && mix one lowercase char and two digits",
+            "data": "...[#-1]{$a|$b|$c}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && mix two lowercase chars and one digit",
+            "data": "...[#-1]{$a~\\test\\$}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all lowercase chars",
+            "data": "...[#-1]{$a~\\test\\{}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && two wildcards and one lowercase char right",
+            "data": "...[#-1]{$a~\\test\\}}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && one wildcard left and two lowercase chars",
+            "data": "...[#-1]{$a~\\test\\!}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && one lowercase and two wildcards right",
+            "data": "...[#-1]{$a~\\test\\=}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all lowercase chars",
+            "data": "...[#-1]{$a~\\test\\~}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all lowercase chars",
+            "data": "...[#-1]{$a~\\test\\?}",
+            "valid": true
+        },
+        {
+            "description": "valid wild combination: range from last position to position two (index reverted) && all lowercase chars",
+            "data": "...[#-1]{$a~\\test\\|}",
+            "valid": true
+        }
+    ]
+}
