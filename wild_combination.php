@@ -139,8 +139,8 @@ make_json($combineIndexIndicatorSubSpec,true,"wild combination of valid field ta
 $combineIndexChar = combine($_json['validIndex'],$_json['validChar']);
 make_json($combineIndexChar,true,"wild combination of valid field tag, index and charspec",'validIndexChar');
 
-$combineIndexCharSubSpec = combine($combineIndexChar,$_json['validSubSpec']);
-make_json($combineIndexCharSubSpec,true,"wild combination of valid field tag, index, charspec and subspec",'validIndexCharSubSpec');
+$combineIndexSubSpec = combine($_json['validIndex'],$_json['validSubSpec']);
+make_json($combineIndexSubSpec,true,"wild combination of valid field tag, index and subspec",'validIndexSubSpec');
 
 $combineSubfieldTagSubSpec = combine($_json['validSubfieldTag'],$_json['validSubSpec']);
 make_json($combineSubfieldTagSubSpec,true,"wild combination of valid field tag, subfield tag and subspec",'validSubfieldTagSubSpec');
