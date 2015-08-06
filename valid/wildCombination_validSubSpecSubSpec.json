@@ -45,11 +45,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: all wildcards && all uppercase chars",
-            "data": "...{245$a}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: all wildcards && two wildcards left one uppercase char",
             "data": "...{245$a}{\/#=\\\/}",
             "valid": true
@@ -152,11 +147,6 @@
         {
             "description": "valid wild combination: two wildcards left with digit && all uppercase chars special leader",
             "data": "...{$a}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: two wildcards left with digit && all uppercase chars",
-            "data": "...{$a}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -265,11 +255,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: one wildcard left with two digits && all uppercase chars",
-            "data": "...{?$a}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: one wildcard left with two digits && two wildcards left one uppercase char",
             "data": "...{?$a}{\/#=\\\/}",
             "valid": true
@@ -372,11 +357,6 @@
         {
             "description": "valid wild combination: wildcard between digits && all uppercase chars special leader",
             "data": "...{!$a}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: wildcard between digits && all uppercase chars",
-            "data": "...{!$a}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -485,11 +465,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: two digits wildcard right && all uppercase chars",
-            "data": "...{$a=$b}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: two digits wildcard right && two wildcards left one uppercase char",
             "data": "...{$a=$b}{\/#=\\\/}",
             "valid": true
@@ -592,11 +567,6 @@
         {
             "description": "valid wild combination: one digit two wildcards right && all uppercase chars special leader",
             "data": "...{$a!=$b}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: one digit two wildcards right && all uppercase chars",
-            "data": "...{$a!=$b}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -705,11 +675,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: all digits && all uppercase chars",
-            "data": "...{$a~\\Poe}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: all digits && two wildcards left one uppercase char",
             "data": "...{$a~\\Poe}{\/#=\\\/}",
             "valid": true
@@ -815,11 +780,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: all uppercase chars special leader && all uppercase chars",
-            "data": "...{$a!~\\Poe}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: all uppercase chars special leader && two wildcards left one uppercase char",
             "data": "...{$a!~\\Poe}{\/#=\\\/}",
             "valid": true
@@ -885,116 +845,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: all uppercase chars && all wildcards",
-            "data": "...{__1$a~\\Poe}{245$a}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && two wildcards left with digit",
-            "data": "...{__1$a~\\Poe}{$a}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && one wildcard left with two digits",
-            "data": "...{__1$a~\\Poe}{?$a}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && wildcard between digits",
-            "data": "...{__1$a~\\Poe}{!$a}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && two digits wildcard right",
-            "data": "...{__1$a~\\Poe}{$a=$b}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && one digit two wildcards right",
-            "data": "...{__1$a~\\Poe}{$a!=$b}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && all digits",
-            "data": "...{__1$a~\\Poe}{$a~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && all uppercase chars special leader",
-            "data": "...{__1$a~\\Poe}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && all uppercase chars",
-            "data": "...{__1$a~\\Poe}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && two wildcards left one uppercase char",
-            "data": "...{__1$a~\\Poe}{\/#=\\\/}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && one wildcard left two uppercase chars",
-            "data": "...{__1$a~\\Poe}{$a|$b}{$c}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && one wildcard between uppercase chars",
-            "data": "...{__1$a~\\Poe}{$a}{$b|$c}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && one uppercase char two wildcards right",
-            "data": "...{__1$a~\\Poe}{$a|$b}{$c|$d}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && mix one lowercase char and two digits",
-            "data": "...{__1$a~\\Poe}{$a|$b|$c}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && mix two lowercase chars and one digit",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\$}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && all lowercase chars",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\{}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && two wildcards and one lowercase char right",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\}}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && one wildcard left and two lowercase chars",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\!}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && one lowercase and two wildcards right",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\=}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && all lowercase chars",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\~}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && all lowercase chars",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\?}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all uppercase chars && all lowercase chars",
-            "data": "...{__1$a~\\Poe}{$a~\\test\\|}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: two wildcards left one uppercase char && all wildcards",
             "data": "...{\/#=\\\/}{245$a}",
             "valid": true
@@ -1032,11 +882,6 @@
         {
             "description": "valid wild combination: two wildcards left one uppercase char && all uppercase chars special leader",
             "data": "...{\/#=\\\/}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: two wildcards left one uppercase char && all uppercase chars",
-            "data": "...{\/#=\\\/}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -1145,11 +990,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: one wildcard left two uppercase chars && all uppercase chars",
-            "data": "...{$a|$b}{$c}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: one wildcard left two uppercase chars && two wildcards left one uppercase char",
             "data": "...{$a|$b}{$c}{\/#=\\\/}",
             "valid": true
@@ -1252,11 +1092,6 @@
         {
             "description": "valid wild combination: one wildcard between uppercase chars && all uppercase chars special leader",
             "data": "...{$a}{$b|$c}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: one wildcard between uppercase chars && all uppercase chars",
-            "data": "...{$a}{$b|$c}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -1365,11 +1200,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: one uppercase char two wildcards right && all uppercase chars",
-            "data": "...{$a|$b}{$c|$d}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: one uppercase char two wildcards right && two wildcards left one uppercase char",
             "data": "...{$a|$b}{$c|$d}{\/#=\\\/}",
             "valid": true
@@ -1472,11 +1302,6 @@
         {
             "description": "valid wild combination: mix one lowercase char and two digits && all uppercase chars special leader",
             "data": "...{$a|$b|$c}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: mix one lowercase char and two digits && all uppercase chars",
-            "data": "...{$a|$b|$c}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -1585,11 +1410,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: mix two lowercase chars and one digit && all uppercase chars",
-            "data": "...{$a~\\test\\$}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: mix two lowercase chars and one digit && two wildcards left one uppercase char",
             "data": "...{$a~\\test\\$}{\/#=\\\/}",
             "valid": true
@@ -1692,11 +1512,6 @@
         {
             "description": "valid wild combination: all lowercase chars && all uppercase chars special leader",
             "data": "...{$a~\\test\\{}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all lowercase chars && all uppercase chars",
-            "data": "...{$a~\\test\\{}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -1805,11 +1620,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: two wildcards and one lowercase char right && all uppercase chars",
-            "data": "...{$a~\\test\\}}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: two wildcards and one lowercase char right && two wildcards left one uppercase char",
             "data": "...{$a~\\test\\}}{\/#=\\\/}",
             "valid": true
@@ -1912,11 +1722,6 @@
         {
             "description": "valid wild combination: one wildcard left and two lowercase chars && all uppercase chars special leader",
             "data": "...{$a~\\test\\!}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: one wildcard left and two lowercase chars && all uppercase chars",
-            "data": "...{$a~\\test\\!}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -2025,11 +1830,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: one lowercase and two wildcards right && all uppercase chars",
-            "data": "...{$a~\\test\\=}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: one lowercase and two wildcards right && two wildcards left one uppercase char",
             "data": "...{$a~\\test\\=}{\/#=\\\/}",
             "valid": true
@@ -2132,11 +1932,6 @@
         {
             "description": "valid wild combination: all lowercase chars && all uppercase chars special leader",
             "data": "...{$a~\\test\\~}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all lowercase chars && all uppercase chars",
-            "data": "...{$a~\\test\\~}{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -2245,11 +2040,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: all lowercase chars && all uppercase chars",
-            "data": "...{$a~\\test\\?}{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: all lowercase chars && two wildcards left one uppercase char",
             "data": "...{$a~\\test\\?}{\/#=\\\/}",
             "valid": true
@@ -2352,11 +2142,6 @@
         {
             "description": "valid wild combination: all lowercase chars && all uppercase chars special leader",
             "data": "...{$a~\\test\\|}{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: all lowercase chars && all uppercase chars",
-            "data": "...{$a~\\test\\|}{__1$a~\\Poe}",
             "valid": true
         },
         {

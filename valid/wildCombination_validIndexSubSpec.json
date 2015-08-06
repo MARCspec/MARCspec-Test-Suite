@@ -45,11 +45,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: last position && all uppercase chars",
-            "data": "...[#]{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: last position && two wildcards left one uppercase char",
             "data": "...[#]{\/#=\\\/}",
             "valid": true
@@ -152,11 +147,6 @@
         {
             "description": "valid wild combination: first position && all uppercase chars special leader",
             "data": "...[0]{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: first position && all uppercase chars",
-            "data": "...[0]{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -265,11 +255,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: position ten && all uppercase chars",
-            "data": "...[9]{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: position ten && two wildcards left one uppercase char",
             "data": "...[9]{\/#=\\\/}",
             "valid": true
@@ -372,11 +357,6 @@
         {
             "description": "valid wild combination: position eleven && all uppercase chars special leader",
             "data": "...[10]{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: position eleven && all uppercase chars",
-            "data": "...[10]{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -485,11 +465,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: position 101 && all uppercase chars",
-            "data": "...[100]{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: position 101 && two wildcards left one uppercase char",
             "data": "...[100]{\/#=\\\/}",
             "valid": true
@@ -592,11 +567,6 @@
         {
             "description": "valid wild combination: range from first position to second && all uppercase chars special leader",
             "data": "...[0-1]{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: range from first position to second && all uppercase chars",
-            "data": "...[0-1]{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -705,11 +675,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: range from first position to last && all uppercase chars",
-            "data": "...[0-#]{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: range from first position to last && two wildcards left one uppercase char",
             "data": "...[0-#]{\/#=\\\/}",
             "valid": true
@@ -812,11 +777,6 @@
         {
             "description": "valid wild combination: range from first position to first position, is like first position && all uppercase chars special leader",
             "data": "...[0-0]{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: range from first position to first position, is like first position && all uppercase chars",
-            "data": "...[0-0]{__1$a~\\Poe}",
             "valid": true
         },
         {
@@ -925,11 +885,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: range from last position to last position, is like last position && all uppercase chars",
-            "data": "...[#-#]{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: range from last position to last position, is like last position && two wildcards left one uppercase char",
             "data": "...[#-#]{\/#=\\\/}",
             "valid": true
@@ -1035,11 +990,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: range from last position to position one (index reverted), is like last position && all uppercase chars",
-            "data": "...[#-0]{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: range from last position to position one (index reverted), is like last position && two wildcards left one uppercase char",
             "data": "...[#-0]{\/#=\\\/}",
             "valid": true
@@ -1142,11 +1092,6 @@
         {
             "description": "valid wild combination: range from last position to position two (index reverted) && all uppercase chars special leader",
             "data": "...[#-1]{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: range from last position to position two (index reverted) && all uppercase chars",
-            "data": "...[#-1]{__1$a~\\Poe}",
             "valid": true
         },
         {

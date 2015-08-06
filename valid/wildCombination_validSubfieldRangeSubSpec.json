@@ -45,11 +45,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: subfield range with lowercase subfieldtags && all uppercase chars",
-            "data": "...$a-z{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: subfield range with lowercase subfieldtags && two wildcards left one uppercase char",
             "data": "...$a-z{\/#=\\\/}",
             "valid": true
@@ -152,11 +147,6 @@
         {
             "description": "valid wild combination: subfield range with digits && all uppercase chars special leader",
             "data": "...$0-9{$a!~\\Poe}",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: subfield range with digits && all uppercase chars",
-            "data": "...$0-9{__1$a~\\Poe}",
             "valid": true
         },
         {

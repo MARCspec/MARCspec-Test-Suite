@@ -45,11 +45,6 @@
             "valid": true
         },
         {
-            "description": "valid wild combination: all uppercase chars",
-            "data": "...{__1$a~\\Poe}",
-            "valid": true
-        },
-        {
             "description": "valid wild combination: two wildcards left one uppercase char",
             "data": "...{\/#=\\\/}",
             "valid": true
