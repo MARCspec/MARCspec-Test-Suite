@@ -15,7 +15,7 @@
             "valid": false
         },
         {
-            "description": "invalid wild combination: subfield with single digit subfieldtag",
+            "description": "invalid wild combination: char '|' is not allowed",
             "data": "...$|",
             "valid": false
         },
