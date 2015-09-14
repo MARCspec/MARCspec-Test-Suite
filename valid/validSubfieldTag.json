@@ -6,172 +6,167 @@
     },
     "tests": [
         {
-            "description": "subfield with single lowercase alpha subfieldtag",
+            "description": "lowercase alpha subfieldtag a",
             "data": "a",
             "valid": true
         },
         {
-            "description": "subfield with single lowercase alpha subfieldtag",
+            "description": "lowercase alpha subfieldtag z",
             "data": "z",
             "valid": true
         },
         {
-            "description": "subfield with single digit subfieldtag",
+            "description": "digit subfieldtag 0",
             "data": "0",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "digit subfieldtag 9",
             "data": "9",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag !",
             "data": "!",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
-            "data": "\\",
-            "valid": true
-        },
-        {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag #",
             "data": "#",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag $",
             "data": "$",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag %",
             "data": "%",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag &",
             "data": "&",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag '",
             "data": "'",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag (",
             "data": "(",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag )",
             "data": ")",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag *",
             "data": "*",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag +",
             "data": "+",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag ,",
             "data": ",",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag -",
             "data": "-",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag .",
             "data": ".",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag /",
             "data": "/",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag :",
             "data": ":",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag ;",
             "data": ";",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag <",
             "data": "<",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag =",
             "data": "=",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag >",
             "data": ">",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag ?",
             "data": "?",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag [",
             "data": "[",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag \\",
             "data": "\\",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag ]",
             "data": "]",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag ^",
             "data": "^",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag _",
             "data": "_",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag `",
             "data": "`",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag {",
             "data": "{",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag }",
             "data": "}",
             "valid": true
         },
         {
-            "description": "subfieldrange with lowercase subfieldtags",
+            "description": "subfieldtag ~",
             "data": "~",
             "valid": true
         }
