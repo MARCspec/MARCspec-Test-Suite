@@ -16,7 +16,7 @@
             "valid": false
         },
         {
-            "description": "subfield with single digit subfieldtag",
+            "description": "char '|' is not allowed",
             "data": "|",
             "valid": false
         },

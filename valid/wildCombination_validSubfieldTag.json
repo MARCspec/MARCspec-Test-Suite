@@ -5,172 +5,167 @@
     },
     "tests": [
         {
-            "description": "valid wild combination: subfield with single lowercase alpha subfieldtag",
+            "description": "valid wild combination: lowercase alpha subfieldtag a",
             "data": "...$a",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfield with single lowercase alpha subfieldtag",
+            "description": "valid wild combination: lowercase alpha subfieldtag z",
             "data": "...$z",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfield with single digit subfieldtag",
+            "description": "valid wild combination: digit subfieldtag 0",
             "data": "...$0",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: digit subfieldtag 9",
             "data": "...$9",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag !",
             "data": "...$!",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
-            "data": "...$\\",
-            "valid": true
-        },
-        {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag #",
             "data": "...$#",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag $",
             "data": "...$$",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag %",
             "data": "...$%",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag &",
             "data": "...$&",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag '",
             "data": "...$'",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag (",
             "data": "...$(",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag )",
             "data": "...$)",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag *",
             "data": "...$*",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag +",
             "data": "...$+",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag ,",
             "data": "...$,",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag -",
             "data": "...$-",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag .",
             "data": "...$.",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag \/",
             "data": "...$\/",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag :",
             "data": "...$:",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag ;",
             "data": "...$;",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag <",
             "data": "...$<",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag =",
             "data": "...$=",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag >",
             "data": "...$>",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag ?",
             "data": "...$?",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag [",
             "data": "...$[",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag \\",
             "data": "...$\\",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag ]",
             "data": "...$]",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag ^",
             "data": "...$^",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag _",
             "data": "...$_",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag `",
             "data": "...$`",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag {",
             "data": "...${",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag }",
             "data": "...$}",
             "valid": true
         },
         {
-            "description": "valid wild combination: subfieldrange with lowercase subfieldtags",
+            "description": "valid wild combination: subfieldtag ~",
             "data": "...$~",
             "valid": true
         }
