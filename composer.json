@@ -2,6 +2,7 @@
     "name" : "ck/marcspec-test-suite",
     "description" : "A Testsuite for MARCspec parsers",
     "keywords" : ["marcspec", "marc", "tests", "validator"],
+    "license": "MIT",
     "authors" : [
         {
             "name": "Carsten Klee",
