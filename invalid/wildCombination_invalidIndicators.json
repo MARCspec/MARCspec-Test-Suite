@@ -5,18 +5,18 @@
     },
     "tests": [
         {
-            "description": "invalid wild combination: only three characters allowed",
-            "data": "..._12_",
+            "description": "invalid wild combination: only one character allowed",
+            "data": "...^12",
             "valid": false
         },
         {
-            "description": "invalid wild combination: not allowed character at indicator one",
-            "data": "..._$",
+            "description": "invalid wild combination: not allowed character",
+            "data": "...^3",
             "valid": false
         },
         {
-            "description": "invalid wild combination: not allowed character at indicator two",
-            "data": "..._1|",
+            "description": "invalid wild combination: empty",
+            "data": "...^",
             "valid": false
         }
     ]

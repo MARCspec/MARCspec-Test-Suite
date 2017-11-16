@@ -2,22 +2,22 @@
     "description": "indicators are strings and match pattern",
     "schema": {
       "type": "string",
-      "pattern": "(^[_a-z0-9][_a-z0-9]{0,1}$)"
+      "pattern": "(^[12]$)"
     },
     "tests": [
         {
-            "description": "only three characters allowed",
-            "data": "12_",
+            "description": "only one character allowed",
+            "data": "12",
             "valid": false
         },
         {
-            "description": "not allowed character at indicator one",
-            "data": "$",
+            "description": "not allowed character",
+            "data": "3",
             "valid": false
         },
         {
-            "description": "not allowed character at indicator two",
-            "data": "1|",
+            "description": "empty",
+            "data": "",
             "valid": false
         }
     ]

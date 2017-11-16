@@ -15,7 +15,7 @@ $index = function($postionOrRange)
 
 $indicator = function($ind)
 {
-    return "_".$ind;
+    return "^".$ind;
 };
 
 $subfield = function($subfieldTagOrRange)

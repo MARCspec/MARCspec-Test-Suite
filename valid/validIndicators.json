@@ -2,52 +2,17 @@
     "description": "indicators are strings and match pattern",
     "schema": {
       "type": "string",
-      "pattern": "(^[_a-z0-9][_a-z0-9]{0,1}$)"
+      "pattern": "(^[12]$)"
     },
     "tests": [
         {
-            "description": "first indicator is null second is omitted/wildcard",
-            "data": "0",
+            "description": "indicator 1",
+            "data": "1",
             "valid": true
         },
         {
-            "description": "first indicator is null second is blank/wildcard",
-            "data": "0_",
-            "valid": true
-        },
-        {
-            "description": "first indicator is null second is one",
-            "data": "01",
-            "valid": true
-        },
-        {
-            "description": "first indicator is one second is 'z'",
-            "data": "1z",
-            "valid": true
-        },
-        {
-            "description": "first indicator is blank/wildcard second is one",
-            "data": "_1",
-            "valid": true
-        },
-        {
-            "description": "first indicator is 'a' second is omitted/wildcard/wildcard",
-            "data": "a",
-            "valid": true
-        },
-        {
-            "description": "first indicator is blank/wildcard second is 'b'",
-            "data": "_b",
-            "valid": true
-        },
-        {
-            "description": "first indicator is 'a' second is blank/wildcard",
-            "data": "a_",
-            "valid": true
-        },
-        {
-            "description": "both blank/wildcard",
-            "data": "__",
+            "description": "indicator 2",
+            "data": "2",
             "valid": true
         }
     ]
