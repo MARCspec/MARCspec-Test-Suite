@@ -151,9 +151,6 @@ make_json($combineSubfieldRangeSubSpec,true,"wild combination of valid field tag
 $combineSubfieldTagTag = combine($_json['validSubfieldTag'],$_json['validSubfieldTag']);
 make_json($combineSubfieldTagTag,true,"wild combination of valid field tag and subfield tags",'validSubfieldTagTag');
 
-$combineSubfieldSubSpecTag = combine($_json['validSubSpec'],$_json['validSubfieldTag']);
-make_json($combineSubfieldSubSpecTag,true,"wild combination of valid field tag with subspec and subfield tag",'validSubfieldSubSpecTag');
-
 $combineSubfieldRangeRange = combine($_json['validSubfieldRange'],$_json['validSubfieldRange']);
 make_json($combineSubfieldRangeRange,true,"wild combination of valid field tag and subfield ranges",'validSubfieldRangeRange');
 
